@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инфолайн</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -42,14 +47,32 @@
                         <!-- Телефон -->
                         <div class="phone header__phone">
                             <img src="./images/icons/tel.svg" alt="" class="phone__icon">
-                            <a href="tel:+73452388000" class="phone__link">8 (3452) <span>388-000</span> </a>
+                            <a href="tel:+73452388000" class="phone__link"><span>8 (3452)</span> 388-000</a>
                         </div>
                         <!-- Конец телефона -->
                     </div>
                 </div>
             </div>
         </header>
-
+        <!-- Главная секция -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <!-- Надзаголовок -->
+                    <div class="address">ул. Республики, 61</div>
+                    <!-- Заголовок страницы -->
+                    <h1 class="hero__title">Бизнес-Центр <br> в Тюмени</h1>
+                    <!-- Кнопки -->
+                    <div class="hero__btns">
+                        <button class="btn btn--primary hero__btn">Заказать звонок</button>
+                    </div>
+                </div>
+                <!-- Блок с картинкой в секции hero -->
+                <div class="hero__image">
+                    <img src="./images/bg/building.png" alt="Многоэтажное здание" class="hero__pic">
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
