@@ -13,6 +13,8 @@
 
 .hero__content {
     padding-top: 75px;
+    flex: 1;
+    padding-right: 85px;
 }
 
 .address {
@@ -51,10 +53,42 @@
 
 .hero__btn {}
 
-.hero__image {}
+.hero__image {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
 
 .hero__pic {
     height: 100%;
     object-fit: contain;
     object-position: bottom center;
+    z-index: 20;
+    position: relative;
+}
+
+.hero__image::before,
+.hero__image::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+
+}
+
+.hero__image::before {
+    top: 0;
+    left: 0;
+    background-image: url("../../images/bg/sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 15;
+}
+
+.hero__image::after {
+    top: -15px;
+    left: 30px;
+    background-color: #404f59;
+    z-index: 10;
 }
