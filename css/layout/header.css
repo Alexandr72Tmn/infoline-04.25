@@ -33,7 +33,7 @@
     column-gap: 30px;
 }
 
-.heder__nav-list {
+.header__nav-list {
     background: #404f59;
     padding: 20px 40px;
     border-radius: 0 0 10px 10px;
@@ -56,3 +56,7 @@
 .phone__icon {}
 
 .phone__link {}
+
+.burger {
+    display: none;
+}
