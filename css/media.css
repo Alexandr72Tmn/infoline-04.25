@@ -5,6 +5,10 @@
         padding-left: 0;
     }
 
+    .section-title {
+        font-size: 24px;
+    }
+
     .header {
         background-color: #404f59;
         border-radius: 0 0 10px 10px;
@@ -32,6 +36,10 @@
     .hero__image {
         flex: 1 0 50vw;
         padding-left: 30px;
+    }
+
+    .services__logo {
+        display: none;
     }
 }
 
@@ -62,5 +70,34 @@
 
     .hero__pic {
         width: 248px;
+    }
+
+    .service {
+        width: 343px;
+        min-height: 152px;
+    }
+
+    .service__content {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 860px) {
+    .service {
+        width: 260px;
+        min-height: 251px;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .service__img {
+        width: 100%;
+        background-color: #fff;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .service__content {
+        padding: 0;
     }
 }
